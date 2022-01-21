@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>OnCalci</title>
+	<link rel="stylesheet" type="text/css" href="calci.css">
+</head>
+<body>
+
+	<div id="particles-js"><h1>OnCalci<h1></div>
+	<form name="calc" class="calci" action="OnlineCalci.html" method="POST">
+		<div class="area"><input type="text" name="calculation" id="display"></div><br>
+		<input type="button" class="button_design" value="C" onclick="calc.calculation.value=''">
+		<input type="button" class="button_design" value="00" onclick="calc.calculation.value+='00'">
+		<input type="button" class="button_design" value="<" onclick="calc.calculation.value=calc.calculation.value.substring(0,calc.calculation.value.length*1-1)">
+		<input type="button" class="op_design" value="/" onclick="calc.calculation.value+='/'">
+		<br><br>
+		<input type="button" class="button_design" value="7" onclick="calc.calculation.value+='7'">
+		<input type="button" class="button_design" value="8" onclick="calc.calculation.value+='8'">
+		<input type="button" class="button_design" value="9" onclick="calc.calculation.value+='9'">
+		<input type="button" class="op_design" value="*" onclick="calc.calculation.value+='*'">
+		<br><br>
+		<input type="button" class="button_design" value="4" onclick="calc.calculation.value+='4'">
+		<input type="button" class="button_design" value="5" onclick="calc.calculation.value+='5'">
+		<input type="button" class="button_design" value="6" onclick="calc.calculation.value+='6'">
+		<input type="button" class="op_design" value="-" onclick="calc.calculation.value+='-'">
+		<br><br>
+		<input type="button" class="button_design" value="1" onclick="calc.calculation.value+='1'">
+		<input type="button" class="button_design" value="2" onclick="calc.calculation.value+='2'">
+		<input type="button" class="button_design" value="3" onclick="calc.calculation.value+='3'">
+		<input type="button" class="op_design" value="+" onclick="calc.calculation.value+='+'">
+		<br><br>
+		<input type="button" class="button_design" value="." onclick="calc.calculation.value+='.'">
+		<input type="button" class="button_design" value="0" onclick="calc.calculation.value+='0'">
+		<input type="button" class="op_design" id="equal" value="=" onclick="calc.calculation.value=eval(calc.calculation.value)">
+	</form>
+	<footer><a href="https://www.linkedin.com/in/pushpratan/" target="blank">By:- Pushp Ratan<img src="linkedin.png"/></a></footer>
+	
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	
+</body>
+</html>

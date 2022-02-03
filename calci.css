@@ -261,7 +261,7 @@ img{
 #particles-js
 {
 	height: 100%;
-	background: linear-gradient(#090f40,#660000);
+	background: linear-gradient(black,#1d2150);
 	display: flex;
 	align-items: center;	
 	justify-content: center;
